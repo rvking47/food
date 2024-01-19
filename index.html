@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+         <!-- jQuery library -->
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+         
+         <!-- Popper JS -->
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+         
+         <!-- Latest compiled JavaScript -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <style>
+            .header{
+                display: flex;
+                justify-content: space-between;
+                width: 1200px;
+                margin-left: 90px;
+                margin-right: 90px;
+            }
+            a{
+                color: black;
+                font-weight: bold;
+            }
+         </style>
+         <script>
+            $(document).ready(function(){
+                $("#food").modal('show');
+            });
+         </script>
+</head>
+<body>
+   <div id="food" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><img src="logo.png" height="70" width="250"></h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h6 style="color:red;">50% Discount For Today</h6>
+                <h6 class="text-secoundry">Free Delivery</h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Shoping Now</button>
+            </div>
+        </div>
+    </div>
+   </div>
+        <div class="header">
+            <div class="header-right">
+                <nav class="nav">
+                    <img src="logo.png" height="100" width="210">
+                    <a style="margin-top: 20px;" href="#" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a style="margin-top: 20px;" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Menu</a>
+                        <div id="biri" class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Chiken</a>
+                            <a  href="#" class="dropdown-item">Biriyani</a>
+                            <a href="#" class="dropdown-item">Pizza</a>
+                        </div>
+                    </div>
+                    <a style="margin-top: 20px;" href="#" class="nav-item nav-link">Order</a>
+                    <a style="margin-top: 20px;" href="#" class="nav-item nav-link">Reviews</a>
+                    <a style="margin-top: 20px;" href="#" class="nav-item nav-link">Contact</a>
+                </nav>
+            </div>
+            <div style="margin-top: 20px;" class="header-left">
+                
+                <input type="text" class="form-control" placeholder="Search" >
+                <input type="submit" style="border: solid red 2px; position: absolute; margin-left: 210px; margin-top: -40px; " class="btn" value="Search">
+            </div>
+        </div>
+            <div class="container">
+                <div style="margin-top: 20px; " class="row">
+                <div class="content-right">
+                    <div  style="margin-top: 110px; margin-left: -20px;"class="b1">
+                        <h2>Claim Best Offer</h2>
+                        <h2>On Fast<mark style="background-color: transparent; color: red;">Food</mark> & <mark style="background-color: transparent; color:red;">Restaurant</mark></h2>
+                        <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquam.<br>Lorem ipsum dolor sit amet.</p>
+                        <button type="button" class="btn btn-danger">Our Menu</button>
+                    </div>
+                </div>
+                <div style="margin-left: 70px; width:500px;" class="content-left">
+                    <div id="cs" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#cs" data-slide-to="0" class="active"></li>
+                            <li data-target="#cs" data-slide-to="1"></li>
+                            <li data-target="#cs" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image 46.png" width="500" alt="First" height="450">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="4-removebg-preview.png" style="margin-top: -10px;" width="500" alt="Secound" height="460">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="3.webp" style="margin-left: -120px;" width="720" alt="Third" height="450">    
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#cs" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#cs" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+   </div>
+   <div class="container">
+    <div style="margin-top: 50px;" class="serve">
+        <div style="text-align: center;" class="text-serve">
+            <h6 style="color: red;">WHAT WE SERVE</h6>
+            <h5 style="font-weight: bold;">Your Favourite Food</h5>
+            <h5 style="font-weight: bold;">Delivery Partner</h5>
+        </div>
+        <div class="imges">
+            <div style="margin-top: 40px;" class="row">
+                <div class="col-md-4">
+                    <img style="margin-left: 80px;" src="img1.png" width="200" height="180">
+                    <div style="text-align: center; margin-top: 10px;" class="img-body">
+                        <h5 style="font-weight: bold; font-size: 25px;">Easy To Order</h5>
+                        <p style="font-weight: 600;">You only need a few steps in<br>ordering food</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img style="margin-left: 80px;" src="img2.png" width="200" height="180">
+                    <div style="text-align: center; margin-top: 10px;" class="img-body">
+                        <h5 style="font-weight: bold; font-size: 25px;">Fastest Delivery</h5>
+                        <p style="font-weight: 600;">Delivery that is always ontime<br>even faster</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img style="margin-left: 80px;" src="img3.png" width="200" height="180">
+                    <div style="text-align: center; margin-top: 10px;" class="img-body">
+                        <h5 style="font-weight: bold; font-size: 25px;">Best Quality</h5>
+                        <p style="font-weight: 600;">Not only fast us quality is also<br>number one</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 50px;" class="Menu">
+        <div style="text-align: center;" class="menu-text">
+            <h6 style="color:red; font-weight: 26px;">Menu</h6>
+            <h5 style="font-weight: bold;">Delicious Dishes Is Here</h5>
+        </div>
+        <div class="menu-card">
+            <div style="margin-top:40px ;" class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="Mangalorean_Chicken.png" width="240" height="240">
+                        <div class="card-body">
+                            <a href="#biri" data-toggle="dropdown">
+                            <h4 style="color: red; text-align: center;">M Chiken</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$20 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="Garlic_Fried.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">Garlic Fried</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$30 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="Grilled_beef_steak.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">G Beef Steak</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$120 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="Pineapple_Fried_Rice.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">Fried Rice</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$200 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:40px ;" class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="Grilled_pork_ribs.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">Pork Ribs</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$300 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="crispy_fried.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">Crispy Fried</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$10 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="sushi__japanese.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">Sushi Japanes</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$150 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 243px;">
+                        <img src="Lyulya_kebab.png" width="240" height="240">
+                        <div class="card-body">
+                            <h4 style="color: red; text-align: center;">Lyulya Kebab</h4>
+                            <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                            <div style="margin-top: -10px;" class="i1">
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                            <p style="font-weight: bold;">$250 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: red; margin-top: 50px; height: 4px;" class="our">
+    </div>
+    <div style="margin-top: 50px;" class="ourmanu">
+        <h5 style="color: red; text-align: center;">Our Menu</h5>
+        <div style="margin-top:40px ;" class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 243px;">
+                    <img src="burger.png" width="240" height="240">
+                    <div class="card-body">
+                        <h4 style="color: red; text-align: center;">Burger</h4>
+                        <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                        <div style="margin-top: -10px;" class="i1">
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                        <p style="font-weight: bold;">$60 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 243px;">
+                    <img src="fasr food.png" width="240" height="240">
+                    <div class="card-body">
+                        <h4 style="color: red; text-align: center;">Fast Food</h4>
+                        <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                        <div style="margin-top: -10px;" class="i1">
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                        <p style="font-weight: bold;">$50 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 243px;">
+                    <img src="rice.png" width="240" height="240">
+                    <div class="card-body">
+                        <h4 style="color: red; text-align: center;">Rice Dishe</h4>
+                        <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                        <div style="margin-top: -10px;" class="i1">
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                        <p style="font-weight: bold;">$120 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 243px;">
+                    <img src="pizza.png" width="240" height="240">
+                    <div class="card-body">
+                        <h4 style="color: red; text-align: center;">Pizza</h4>
+                        <p style="font-weight: bold; font-size: 13px;">Lorem ipsum dolor sit amet sit.</p>
+                        <div style="margin-top: -10px;" class="i1">
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+                        <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+                        <p style="font-weight: bold;">$30 <i style="color:red; margin-left: 140px;" class="fa fa-briefcase" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div  style="text-align: center; margin-top: 50px;"class="text-order">
+        <h5 style="font-weight: bold;">Ordre Your<mark style="background-color: transparent; color: red; text-align: center; ;">Food</mark></h5>
+    </div>
+    <div style="margin-top: 20px;" class="row">
+        <div class="col-mb-6">
+            <div class="card" style="height: 400px; width: 450px;">
+            <img src="img1.png" width="450" height="400">
+            </div>
+        </div>
+        <div class="col-mb-6 col-lg-7">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Number" class="form-control">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" row="5" style="height: 130px;"  placeholder="Enter Address"></textarea>
+                </div>
+                <input type="submit" style="border: solid 2px red; color: red;" value="Order Now" class="btn">
+            </form>
+        </div>
+    </div>
+    <div style="margin-top: 60px;" class="row">
+        <div class="col-mb-6">
+            <div style="border:red 1px solid" class="card "style="height: 400px; width: 400px;">
+            <img src="review-img.png" width="400" height="400">
+            </div>
+        </div>
+        <div style="margin-left: 60px;" class="col-mb-6 col-lg-7">
+          <h5 style="color:red;">WHAT THEY SAY</h5>
+          <h3>What Our Customers<br>Say About Us</h3>
+          <p style="font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquam cupiditate voluptates vero perspiciatis! Ex sapiente recusandae cumque delectus sit.</p>
+          <p style="font-weight: 500;"><img src="pic-1.png" style="border-radius:10px ;" width="70" height="70"> John Cooper <img src="pic-2.png" style="border-radius:10px ;" width="70" height="70"> Liya Cooper</p>
+          <div style="margin-top: -10px;" class="i1">
+            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+            <i style="color: orange; " class="fa fa-star" aria-hidden="true"></i>
+            <i  style="color: orange; "class="fa fa-star" aria-hidden="true"></i>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="margin-top: 90px;" class="contect">
+        <div style="text-align: center;" class="con1">
+        <h3>Conetct <mark style="background-color: transparent; color: red;">us</mark></h3>
+        </div>
+        <div style="margin-top: 20px;" class="row">
+            <div class="col-mb-6 col-lg-6">
+                <div style="background-color: red; padding-top: 30px; padding-left: 15px; padding-bottom: 110px;" class="card" style="height: 400px; width: 450px;">
+               <h4 style="color: white;">Let's Get In Touch</h4>
+               <p style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus tempora quos ratione, aliquam totam atque?</p>
+               <p> <a href="#"><i style="color: white;" class="fa fa-phone" aria-hidden="true"> 9140621365</i></a></p>
+               <p> <a href="#"><i style="color: white;" class="fa fa-envelope" aria-hidden="true"> rvimal358@gimal.com</i></a></p>
+               <p><a href="#"><i  style="color: white;" class="fa fa-map-marker" aria-hidden="true"> Kanpur</i></a></p>
+                </div>
+            </div>
+            <div class="col-mb-6 col-lg-6">
+                <form style="margin-top: 15px;">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" row="5" style="height: 130px;"  placeholder="Enter Address"></textarea>
+                    </div>
+                    <input type="submit" style="border: solid 2px red; color: red;" value="Order Now" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 60px;" class="footer">
+       <center><img src="logo.png" width="250" height="100"></center>
+        <p style="font-weight: 500;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, minus! Lorem ipsum dolor sit amet.</p>
+        <div style="font-size: 25px; padding-top: 10px; padding-bottom: 10px;" class="icon">
+           <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                 <mark style=" background-color:transparent; color: white; font-size: 3px;">  Lorem ipsum dolor.</mark>
+                 <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <mark style=" background-color:transparent; color: white; font-size: 3px;">  Lorem ipsum dolor.</mark>
+
+            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <mark style=" background-color:transparent; color: white; font-size: 3px;"> Lorem ipsum dolor.</mark>
+
+            <a href="#"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <mark style=" background-color:transparent;"></mark>
+<p style="font-size: 16px; font-weight: 500; padding-top: 20px;">@Copyright SA Coding. All Rights Reserved</p>
+<p style="font-size: 16px; font-weight: 500; margin-top: -10px;">Designed By<mark style="background-color: transparent; color:red;">SA Coding</mark></p>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
